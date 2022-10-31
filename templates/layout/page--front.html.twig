@@ -1,0 +1,22 @@
+
+<div class="hfeed site" id="page">
+    {% include directory ~ '/templates/layout/header.html.twig' %}
+
+    <div class="container fundament-main">
+        <main role="main" class="node">
+            <a id="main-content" tabindex="-1"></a>
+
+            <div class="layout-content col-block col-lg-12">
+                <div class="col-block-wrapper">
+                    {{ page.start_page_content }}
+                    
+                </div>
+            </div>{# /.layout-content #}
+
+        </main>
+    </div>{# /.layout-container #}
+
+    {% include directory ~ '/templates/layout/footer.html.twig' %}
+</div>
+
+

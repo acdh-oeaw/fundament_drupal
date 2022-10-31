@@ -1,0 +1,18 @@
+name: fundament
+description: ACDH-CH Fundament Drupal version
+base theme: stable
+type: theme
+core_version_requirement: ^8.8 || ^9
+package: acdh
+
+libraries:
+  - fundament/global-css
+  - fundament/global-js
+
+regions:
+  header: 'Header'
+  breadcrumbs: 'Breadcrumbs'
+  main_navigation: 'Main Navigation'
+  content: 'Main Content'
+  footer: 'Footer'
+  start_page_content: 'Start Page Content'

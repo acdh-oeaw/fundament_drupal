@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Prepares variables for `html.html.twig`.
+ */
+function fundament_preprocess_html(&$variables) {
+  //$variables['attributes']['class'][] = 'container';
+    //error_log("PREPRocESS");
+    //$theme = \Drupal::theme()->getActiveTheme()->getName();
+    //error_log($theme);
+}
+
+
+/**
+ * Prepares variables for `region.html.twig`.
+
+function fundament_preprocess_region(&$variables) {
+  $variables['attributes']['class'][] = 'mb-3';
+}
+ */
+
+
+/**
+ * Implements hook_page_attachments().
+ */
+function fundament_page_attachments(array &$attachments) {
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  error_log($theme);
+  if ($theme == 'claro') {
+      
+      error_log('itt');
+    //$attachments['#attached']['library'][] = 'fundament/fundament.admin';
+  }
+}
+
