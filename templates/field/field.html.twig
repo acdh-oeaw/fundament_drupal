@@ -71,17 +71,16 @@
 
     <div class="form-group detail-box">
         <div class="field__label">
-        <label>{{ label }}</label>
+            <h3>{{ label }}</h3>
         </div>
         {% if multiple %}
             <div class="field__items">
-            {% endif %}
+        {% endif %}
 
-
-            {% for item in items %}
-                <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
-            {% endfor %}
-            {% if multiple %}
+        {% for item in items %}
+            <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+        {% endfor %}
+        {% if multiple %}
             </div>
         {% endif %}
     </div>
