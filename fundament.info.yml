@@ -1,8 +1,8 @@
 name: fundament
 description: ACDH-CH Fundament Drupal version
-base theme: stable
+base theme: stable9
 type: theme
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9
 package: acdh
 
 libraries:
